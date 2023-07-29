@@ -1,8 +1,12 @@
 ---
 layout: page
-title:  Day 1
-date: 2023-07-11
+title:  Index
 ---
+# Day 1 July 11,2023
+DevOps and Cloud Computing
+
+# Day 2 July 12,2023
+----------------
 
 {% for tag in site.tags %}
   <h3>{{ tag[personal,diary] }}</h3>
