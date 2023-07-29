@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Daily Diary
+title:  Day 1
 date: 2023-07-11
 ---
 
