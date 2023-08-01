@@ -25,7 +25,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1; /* Place the background image behind other content */
-  transition: height 0.5s; /* Smooth transition effect for image height */
 }
 
 /* GitHub info styles */
@@ -59,6 +58,8 @@ body {
   background-color: rgba(255, 255, 255, 0.8); /* 20% transparent background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  position: relative;
+  z-index: 1; /* Place the entries container above the background image */
 }
 
 .content h2 {
