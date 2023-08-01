@@ -6,7 +6,7 @@ body {
   }
   
   .background-image {
-    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-image: url('devops.avif'); /* Replace 'your-background-image.jpg' with the path to your background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -35,17 +35,6 @@ body {
     color: #007BFF;
     text-decoration: none;
     margin-top: 10px;
-  }
-  
-  .entries {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    position: relative; /* Add position relative for z-index to work */
-    z-index: 1; /* Place the entries container above the background */
   }
   
   .entries h2 {
