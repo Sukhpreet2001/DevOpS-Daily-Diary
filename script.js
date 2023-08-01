@@ -1,36 +1,26 @@
 const diaryList = document.getElementById('diary-list');
 
 const dailyDiaryEntries = [
-  { date: '2023-07-11', title: 'Day 1', content: 'Introduction to DevOps.' },
-  { date: '2023-07-12', title: 'Day 2', content: 'Introduction to GitHub.' },
+  { date: '2023-07-11', title: 'Day 1', content: `<h2>Day 1 - 11/07/2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday</h2>
+  <!-- ... The rest of the HTML content for Day 1 ... -->` },
+  { date: '2023-07-12', title: 'Day 2', content: `<h2>Day 2 - 12/07/2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday</h2>
+  <!-- ... The rest of the HTML content for Day 2 ... -->` },
   // Add more daily diary entries here...
 ];
 
 function createDiaryEntryLink(entry) {
   const listItem = document.createElement('li');
   const link = document.createElement('a');
-  link.href = `./entries/${entry.date}.md`;
+  link.href = `./entries/${entry.date}.html`; // Update link extension to .html
   link.textContent = entry.title;
   listItem.appendChild(link);
 
   // Use the content property as the summary
   const summary = document.createElement('p');
-  summary.textContent = entry.content;
+  summary.innerHTML = entry.content; // Use innerHTML to render the HTML content
   listItem.appendChild(summary);
 
   diaryList.appendChild(listItem);
-
-  // Fetch the content of the Markdown file and render it as HTML
-  fetch(`./entries/${entry.date}.md`)
-    .then((response) => response.text())
-    .then((markdownContent) => {
-      const entryContent = document.createElement('div');
-      entryContent.innerHTML = marked(markdownContent);
-      listItem.appendChild(entryContent);
-    })
-    .catch((error) => {
-      console.error(`Error fetching or rendering ${entry.date}.md`, error);
-    });
 }
 
 function populateDiaryList() {
