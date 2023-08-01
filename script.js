@@ -1,10 +1,8 @@
 const diaryList = document.getElementById('diary-list');
 
 const dailyDiaryEntries = [
-  { date: '2023-07-11', title: 'Day 1', content: `<h2>Day 1 - 11/07/2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday</h2>
-  <!-- ... The rest of the HTML content for Day 1 ... -->` },
-  { date: '2023-07-12', title: 'Day 2', content: `<h2>Day 2 - 12/07/2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday</h2>
-  <!-- ... The rest of the HTML content for Day 2 ... -->` },
+  { date: '2023-07-11', title: 'Day 1', content: `Introduction to DevOps` },
+  { date: '2023-07-12', title: 'Day 2', content: `Introduction to GitHub` },
   // Add more daily diary entries here...
 ];
 
