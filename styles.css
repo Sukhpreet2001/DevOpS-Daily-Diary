@@ -30,33 +30,35 @@ header p {
   margin-bottom: 5px;
 }
 
-/* Background image styles (common for all pages) */
+/* ... (Previous CSS code remains unchanged) ... */
+
+/* Add background image styles */
 .background-image {
+  background-image: url('devops.avif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 400px; /* Adjust the height for better visibility */
+  height: 600px;
   position: relative;
 }
 
-/* GitHub info styles (common for all pages) */
+/* Update GitHub info styles */
 .github-info {
   position: absolute;
-  top: 50%; /* Center the GitHub info vertically */
-  left: 50%; /* Center the GitHub info horizontally */
-  transform: translate(-50%, -50%); /* Centering trick */
-  max-width: 300px; /* Limit the width for smaller screens */
-  background-color: rgba(0, 0, 0, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
 }
 
-.github-info a {
-  color: #fff;
-  text-decoration: none;
-}
+/* ... (Previous CSS code remains unchanged) ... */
+
 
 /* Entry container styles (specific to each page) */
 .entry-container {
