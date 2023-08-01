@@ -1,83 +1,113 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default margin and padding for all elements */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  box-sizing: border-box;
 }
 
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header styles (common for all pages) */
+header {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Background image styles (common for all pages) */
 .background-image {
-  background-image: url('devops.avif'); /* Replace 'devops.avif' with the path to your background image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
-  height: 600px;
-  position: relative; /* Add position relative for absolute positioning of content */
+  height: 400px; /* Adjust the height for better visibility */
+  position: relative;
 }
 
+/* GitHub info styles (common for all pages) */
 .github-info {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 25%; /* Occupy 25% of the page */
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-  color: white;
+  top: 50%; /* Center the GitHub info vertically */
+  left: 50%; /* Center the GitHub info horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+  max-width: 300px; /* Limit the width for smaller screens */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .github-info a {
-  color: #007BFF;
+  color: #fff;
   text-decoration: none;
-  margin-top: 10px;
 }
 
-.entries {
+/* Entry container styles (specific to each page) */
+.entry-container {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  position: relative; /* Add position relative for z-index to work */
-  z-index: 1; /* Place the entries container above the background */
 }
 
-.entries h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-#diary-list {
-  list-style: none;
-  padding: 0;
-}
-
-#diary-list li {
-  margin-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
+/* Day of the week styles (specific to each page) */
+.day-of-week {
+  float: right;
+  font-size: 18px;
   color: #007BFF;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Heading styles (specific to each page) */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-/* Icon styles */
-i.material-icons,
-i.fab {
-  font-size: 18px;
-  margin-right: 5px;
+h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
-i.material-icons {
-  vertical-align: middle;
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .entry-container {
+    padding: 10px;
+  }
+
+  /* Reduce font size for better readability on smaller screens */
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  /* Adjust font size for day of the week */
+  .day-of-week {
+    font-size: 16px;
+  }
+
+  /* Adjust the space between the date and the day of the week on smaller screens */
+  h2 {
+    line-height: 1.2;
+  }
 }
