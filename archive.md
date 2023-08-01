@@ -6,7 +6,8 @@ title:  Index
  Introduction to DevOps
 
 **Day 2 July 12,2023**
-Introduction to GitHub
+  Introduction to GitHub
+  
 ----------------
 
 {% for tag in site.tags %}
