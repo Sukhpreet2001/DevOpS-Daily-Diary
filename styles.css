@@ -52,18 +52,16 @@ body {
 }
 
 /* Entry container styles */
-.entries {
+.content {
   max-width: 800px;
   margin: 120px auto 20px; /* Add spacing between image and entries container */
   padding: 20px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  position: relative; /* Add position relative for z-index to work */
-  z-index: 1; /* Place the entries container above the background */
 }
 
-.entries h2 {
+.content h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -109,7 +107,7 @@ i.material-icons {
     height: 10vh; /* Adjust the height for smaller screens */
   }
 
-  .entries {
+  .content {
     margin-top: 20px; /* Add spacing between image and entries container */
   }
 
