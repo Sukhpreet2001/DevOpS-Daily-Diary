@@ -3,6 +3,7 @@ const diaryList = document.getElementById('diary-list');
 const dailyDiaryEntries = [
   { date: '2023-07-11', title: 'Day 1', content: `Introduction to DevOps` },
   { date: '2023-07-12', title: 'Day 2', content: `Introduction to GitHub` },
+  { date: '2023-07-13', title: 'Day 3', content: `Making GitHub Pages` },
   // Add more daily diary entries here...
 ];
 
