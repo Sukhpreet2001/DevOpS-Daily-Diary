@@ -34,6 +34,9 @@
       background-color: rgba(255, 255, 255, 0.82); /* 18% transparent */
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: relative; /* Add relative position to the container */
+      min-height: calc(100vh - 100px); /* Subtract the height of the navbar from the viewport height */
+      padding-bottom: 30px; /* Add bottom padding */
     }
 
     h2 {
@@ -66,6 +69,27 @@
       font-size: 1.2em;
       color: #2196F3;
     }
+
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(144, 213, 240, 0.9); /* 10% transparent background for the navbar */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: slategray;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .navbar a:hover {
+      color: #000;
+    }
   </style>
 </head>
 
@@ -73,7 +97,6 @@
   <div class="background-image"></div>
   <div class="entry-container">
     <h2>Day 1 - 11/07/2023 <span class="day-of-week">Tuesday</span></h2>
-    <h3>Introduction to DevOps</h3>
 
     <p><strong>DevOps</strong>: DevOps combines development and operations to streamline processes, automate tasks, and improve communication for faster and more reliable software delivery.</p>
 
@@ -208,7 +231,14 @@
     <p><strong>My Favorite Cloud Provider: AWS</strong></p>
 
     <p>AWS has to be my favorite or preferred one since it has a huge customer base and offers quality service. AWS is considered the market leader with a wide range of services and a well-established ecosystem. It offers extensive options and has a proven track record in the industry.</p>
+    
+    <div class="navbar">
+      <a href="#" class="previous-day-link">Previous Day</a>
+      <a href="\index.html">Homepage</a>
+      <a href="2023-07-12.html" class="next-day-link">Next Day</a>
+    </div>
   </div>
+
 </body>
 
 </html>
