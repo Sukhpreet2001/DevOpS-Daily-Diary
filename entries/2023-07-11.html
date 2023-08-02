@@ -6,17 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day 1 - 11/07/2023</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('day1.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .entry-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.82); /* 18% transparent */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    ul ul {
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .day-of-week {
+      font-size: 1.2em;
+      color: #2196F3;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="background-image"></div>
   <div class="entry-container">
     <h2>Day 1 - 11/07/2023 <span class="day-of-week">Tuesday</span></h2>
-
     <h3>Introduction to DevOps</h3>
 
     <p><strong>DevOps</strong>: DevOps combines development and operations to streamline processes, automate tasks, and improve communication for faster and more reliable software delivery.</p>
 
-    <p><strong>Communication Tools</strong>: Slack and Trello</p>
+    <h3>Communication Tools</h3>
 
     <p><strong>Trello</strong>: Trello is a user-friendly online tool that helps you manage and organize your tasks and projects on virtual boards with cards.</p>
 
@@ -39,7 +100,7 @@
       </li>
     </ul>
 
-    <p><strong>Task Assignment Tools</strong>: Asana and JIRA</p>
+    <h3>Task Assignment Tools</h3>
 
     <p><strong>Asana</strong>: Asana is a collaborative online tool that helps teams organize and manage their projects, tasks, and workflows effectively.</p>
 
@@ -62,34 +123,36 @@
       </li>
     </ul>
 
-    <p><strong>Cloud Computing</strong>: Cloud computing delivers computing services over the internet, providing scalable resources, flexibility, and cost-effectiveness for users to access and use data and applications remotely.</p>
+    <h3>Cloud Computing</h3>
 
-    <p><strong>Types</strong>:
-      <ul>
-        <li><strong>Public Cloud</strong>: Resources owned and operated by a third-party provider, accessible to the general public.</li>
-        <li><strong>Private Cloud</strong>: Dedicated to a single organization, offering greater control and security.</li>
-        <li><strong>Hybrid Cloud</strong>: Combination of public and private clouds, providing flexibility and scalability options.</li>
-      </ul>
-    </p>
+    <p><strong>Types</strong>:</p>
+    <ul>
+      <li><strong>Public Cloud</strong>: Resources owned and operated by a third-party provider, accessible to the general public.</li>
+      <li><strong>Private Cloud</strong>: Dedicated to a single organization, offering greater control and security.</li>
+      <li><strong>Hybrid Cloud</strong>: Combination of public and private clouds, providing flexibility and scalability options.</li>
+    </ul>
 
-    <p><strong>Service Providers</strong>:
-      <ul>
-        <li><strong>Amazon Web Services (AWS)</strong>: A comprehensive and widely used cloud platform by Amazon, offering a vast array of services for computing power, storage, databases, networking, and more.</li>
-        <li><strong>Microsoft Azure</strong>: Microsoft's cloud computing platform that provides a broad set of services for building, deploying, and managing applications and infrastructure.</li>
-        <li><strong>Google Cloud Platform (GCP)</strong>: Google's suite of cloud services, including computing, storage, machine learning, data analytics, and application development tools.</li>
-        <li><strong>IBM Cloud</strong>: IBM's cloud computing platform that offers infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) solutions.</li>
-      </ul>
-    </p>
+    <h3>Service Providers</h3>
 
-    <p><strong>Services</strong>:
-      <ul>
-        <li><strong>Infrastructure as a Service (IaaS)</strong>: Provides virtualized computing resources, such as virtual machines, storage, and networks, allowing users to manage and control their infrastructure.</li>
-        <li><strong>Platform as a Service (PaaS)</strong>: Offers a platform for developing, testing, and deploying applications, providing a ready-to-use environment that includes infrastructure, runtime, and development tools.</li>
-        <li><strong>Software as a Service (SaaS)</strong>: Delivers software applications over the internet, allowing users to access and use the software without the need for installation or maintenance.</li>
-      </ul>
-    </p>
+    <ul>
+      <li><strong>Amazon Web Services (AWS)</strong>: A comprehensive and widely used cloud platform by Amazon, offering a vast array of services for computing power, storage, databases, networking, and more.</li>
+      <li><strong>Microsoft Azure</strong>: Microsoft's cloud computing platform that provides a broad set of services for building, deploying, and managing applications and infrastructure.</li>
+      <li><strong>Google Cloud Platform (GCP)</strong>: Google's suite of cloud services, including computing, storage, machine learning, data analytics, and application development tools.</li>
+      <li><strong>IBM Cloud</strong>: IBM's cloud computing platform that offers infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) solutions.</li>
+    </ul>
 
-    <p><strong>Advantages of AWS (Amazon Web Services)</strong>:
+    <h3>Services</h3>
+
+    <ul>
+      <li><strong>Infrastructure as a Service (IaaS)</strong>: Provides virtualized computing resources, such as virtual machines, storage, and networks, allowing users to manage and control their infrastructure.</li>
+      <li><strong>Platform as a Service (PaaS)</strong>: Offers a platform for developing, testing, and deploying applications, providing a ready-to-use environment that includes infrastructure, runtime, and development tools.</li>
+      <li><strong>Software as a Service (SaaS)</strong>: Delivers software applications over the internet, allowing users to access and use the software without the need for installation or maintenance.</li>
+    </ul>
+
+    <h3>Advantages and Disadvantages of Cloud Providers</h3>
+
+    <h4>Amazon Web Services (AWS)</h4>
+    <p>Advantages:
       <ul>
         <li>Wide range of services</li>
         <li>Market leader</li>
@@ -98,8 +161,7 @@
         <li>Well-documented and established</li>
       </ul>
     </p>
-
-    <p><strong>Disadvantages of AWS</strong>:
+    <p>Disadvantages:
       <ul>
         <li>Complexity</li>
         <li>Cost management</li>
@@ -107,7 +169,8 @@
       </ul>
     </p>
 
-    <p><strong>Advantages of Azure (Microsoft Azure)</strong>:
+    <h4>Microsoft Azure</h4>
+    <p>Advantages:
       <ul>
         <li>Integration with Microsoft ecosystem</li>
         <li>Hybrid capabilities</li>
@@ -116,8 +179,7 @@
         <li>Global presence</li>
       </ul>
     </p>
-
-    <p><strong>Disadvantages of Azure</strong>:
+    <p>Disadvantages:
       <ul>
         <li>Learning curve for non-Microsoft users</li>
         <li>Limited regional coverage</li>
@@ -125,7 +187,8 @@
       </ul>
     </p>
 
-    <p><strong>Advantages of GCP (Google Cloud Platform)</strong>:
+    <h4>Google Cloud Platform (GCP)</h4>
+    <p>Advantages:
       <ul>
         <li>Strong focus on data and analytics</li>
         <li>Scalability and performance</li>
@@ -134,8 +197,7 @@
         <li>Pricing and sustained use discounts</li>
       </ul>
     </p>
-
-    <p><strong>Disadvantages of GCP</strong>:
+    <p>Disadvantages:
       <ul>
         <li>Smaller market share</li>
         <li>Less extensive service portfolio</li>
