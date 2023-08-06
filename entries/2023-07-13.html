@@ -4,11 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day 3 (13/07/23) - Thursday</title>
+  <title>Day 3 - 13/07/2023</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('day3.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .entry-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.82); /* 18% transparent */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: relative; /* Add relative position to the container */
+      min-height: calc(100vh - 100px); /* Subtract the height of the navbar from the viewport height */
+      padding-bottom: 30px; /* Add bottom padding */
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    ul ul {
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .day-of-week {
+      font-size: 1.2em;
+      color: #2196F3;
+    }
+
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(99, 82, 148, 0.9); /* 10% transparent background for the navbar */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: rgba(231, 232, 240, 0.993);
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .navbar a:hover {
+      color: #000;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="background-image"></div>
+  <div class="entry-container">
   <h2>Day 3 (13/07/23) <span class="day-of-week"> Thursday</span></h2>
 
   <h3>BRANCHING:</h3>
@@ -86,6 +173,11 @@
     <li><strong>Messaging APIs:</strong> Messaging APIs facilitate communication and data exchange between different software systems or applications. They enable the exchange of messages or notifications in real-time, asynchronously, or through event-driven architectures. Messaging APIs are commonly used in chat applications, collaboration tools, or event-driven architectures like publish-subscribe systems.</li>
     <li><strong>Social Media APIs:</strong> Social Media APIs, such as those provided by platforms like Facebook, Twitter, or Instagram, allow developers to integrate their applications with social media platforms.</li>
   </ul>
+  <div class="navbar">
+    <a href="2023-07-12.html" class="previous-day-link">Previous Day</a>
+    <a href="../index.html">Homepage</a>
+    <a href="2023-07-14.html" class="next-day-link">Next Day</a>
+  </div>
 </body>
 
 </html>
