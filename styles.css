@@ -117,3 +117,13 @@ i.material-icons {
     font-size: 20px;
   }
 }
+/* CSS styles for diary list items */
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
