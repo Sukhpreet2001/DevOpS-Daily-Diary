@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5 - 17/07/2023 <span>Monday</span></title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('day5.jpeg'); /* Replace 'day1.jpeg' with 'day2.jpeg' */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .entry-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.82); /* 18% transparent */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    ul ul {
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .day-of-week {
+      font-size: 1.2em;
+      color: #2196F3;
+    }
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(77, 67, 32, 0.9); /* 10% transparent background for the navbar */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: rgb(195, 227, 228);
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .navbar a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <div class="entry-container">
+    <h2>Day 5 - 17/07/2023 <span class="day-of-week">Monday</span></h2>
+
+  <h2>Learning about Dockerfile</h2>
+
+<p><strong> Machine -&gt; Intermediate (Github) -&gt; Target (Test/Production)</strong></p>
+<p>Once Docker Desktop is installed, follow the steps below to create an image on Docker Desktop:</p>
+
+<h3>Step 1: Create a Folder</h3>
+<p>Create a new folder on your local machine where you'll store your Docker project.</p>
+
+<h3>Step 2: Open in VSCode Editor</h3>
+<p>Open the folder in your Visual Studio Code (VSCode) editor to manage your Docker project.</p>
+
+<h3>Step 3: Create a File named app.js</h3>
+<p>In the folder, create a new file named <code>app.js</code>.</p>
+
+<h3>Step 4: Write Inside the File</h3>
+<p>Write the following line inside the <code>app.js</code> file:</p>
+<pre><code>Console.log("Hi, Welcome to Docker!");</code></pre>
+
+<h3>Step 5: Open Terminal and Execute the Command</h3>
+<p>Open the terminal within VSCode and execute the following command:</p>
+<pre><code>node app.js</code></pre>
+<p>Note: If Node.js is not previously installed, install it before running the command.</p>
+
+<h3>Create a New File Named Dockerfile</h3>
+<p>Create a new file in the same folder named <code>Dockerfile</code>. Write the following content in this file:</p>
+<pre><code>FROM node:alpine
+COPY ./app.js /app
+WORKDIR /app
+CMD node app.js</code></pre>
+<p>Tip: The content of the Dockerfile may vary depending on the programming language and requirements of your project.</p>
+
+<h3>Save and Build the Docker Image</h3>
+<p>Save the Dockerfile and open the terminal in VSCode. Execute the following commands:</p>
+<pre><code>docker --version
+docker build -t hello-docker .</code></pre>
+<p>After running the above commands, the Docker image will be created.</p>
+
+<h3>Run the Docker Container</h3>
+<p>Execute the following command to run the Docker container:</p>
+<pre><code>docker run hello-docker</code></pre>
+<p>The message written in the <code>app.js</code> file will be displayed as the output!</p>
+
+<h2>Task 1: Push the Image to Docker Hub (hub.docker.com)</h2>
+<p>Follow the steps below to push this image from your local system to Docker Hub:</p>
+<ol>
+  <li>Tag the Image:</li>
+  <pre><code>docker image tag hello-docker:latest docker_username/hello-docker:latest</code></pre>
+
+  <li>Login to Docker Hub:</li>
+  <pre><code>docker login</code></pre>
+
+  <li>Push the Image:</li>
+  <pre><code>docker image push docker_username/hello-docker:latest</code></pre>
+</ol>
+<p>Alternatively, you can use the following steps:</p>
+<ol>
+  <li>Login to Docker Hub:</li>
+  <pre><code>docker login</code></pre>
+
+  <li>Tag the Image:</li>
+  <pre><code>docker tag hello-docker:latest docker_username/repository_name:latest</code></pre>
+
+  <li>Push the Image:</li>
+  <pre><code>docker push docker_username/repository_name:latest</code></pre>
+</ol>
+
+<h2>Task 2: Test Using Play-with-docker</h2>
+<p>Follow the steps below to test the Docker image using Play-with-docker:</p>
+<ol>
+  <li>Open Play-with-docker:</li>
+  <p>Open the Play-with-docker website to access the Docker playground.</p>
+
+  <li>Add a New Instance:</li>
+  <p>Add a new instance, and an editor will open.</p>
+
+  <li>Run the Container:</li>
+  <p>Execute the following command to pull and run the Docker image:</p>
+  <pre><code>docker run docker_username/hello-docker:latest</code></pre>
+  <p>The message written in the <code>app.js</code> file will be displayed!</p>
+</ol>
+<div class="navbar">
+  <a href="2023-07-14.html" class="previous-day-link">Previous Day</a>
+  <a href="../index.html">Homepage</a>
+  <a href="2023-07-18.html" class="next-day-link">Next Day</a>
+</div>
+</body>
+
+</html>
