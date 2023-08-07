@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 7 - 19/07/2023 <span>Wednesday</span></title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('day8.jpeg'); /* Replace 'day1.jpeg' with 'day2.jpeg' */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .entry-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.82); /* 18% transparent */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    ul ul {
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .day-of-week {
+      font-size: 1.2em;
+      color: #2196F3;
+    }
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(77, 67, 32, 0.9); /* 10% transparent background for the navbar */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: rgb(195, 227, 228);
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .navbar a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <div class="entry-container">
+    <h2>Day 8 - 20/07/2023 <span class="day-of-week">Thursday</span></h2>
+
+  <h2>Dockerise Project : Recruitement Project</h2>
+  
+  <p>Today's focus was on a project built on the local system, utilizing PHP as the main language for both Frontend and Backend development, with MySQL as the database. We took the following steps to make the project more portable and isolated:</p>
+  
+  <h3>Step 1: Base Project Creation</h3>
+  <p>We started by creating a base project for our learning. The project involved both Frontend and Backend components developed using PHP. Additionally, MySQL was chosen as the database to store and manage data for the application.</p>
+  
+  <h3>Step 2: Dockerization of the Project</h3>
+  <p>To enhance portability and ease of deployment, we decided to dockerize the project. Dockerization involves packaging the application, along with its dependencies, into containers. These containers are self-contained units that can run consistently across different environments.</p>
+  
+  <h3>Advantages of Dockerization</h3>
+  <p>Dockerization offers several benefits:</p>
+  <ul>
+    <li><strong>Isolation:</strong> Docker containers isolate the application and its dependencies, ensuring that it runs consistently and without conflicts.</li>
+    <li><strong>Portability:</strong> Docker containers can be easily moved and run on different machines, making it simple to deploy the application in various environments.</li>
+    <li><strong>Consistency:</strong> Docker ensures that the application behaves consistently across development, testing, and production environments.</li>
+    <li><strong>Scalability:</strong> Docker containers can be scaled up or down as needed to accommodate changing workloads.</li>
+    <li><strong>Version Control:</strong> Docker images can be versioned, enabling easy rollbacks and updates to the application.</li>
+  </ul>
+  
+  <p>By dockerizing our base project, we've achieved a self-contained and consistent development environment. This allows us to develop, test, and run the application in the same environment, eliminating potential issues that arise when moving the project between systems.</p>
+  
+  <p>Our goal is to continue exploring Docker's capabilities and leverage its benefits in future projects as well.</p>
+
+
+
+  <div class="navbar">
+    <a href="2023-07-19.html" class="previous-day-link">Previous Day</a>
+    <a href="../index.html">Homepage</a>
+    <a href="2023-07-21.html" class="next-day-link">Next Day</a>
+  </div>
+</body>
+
+</html>

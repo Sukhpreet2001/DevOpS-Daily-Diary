@@ -8,7 +8,7 @@ const dailyDiaryEntries = [
   { date: '2023-07-17', title: 'Day 5', content: `Learning about Dockerfile` },
   { date: '2023-07-18', title: 'Day 6', content: `Project Assignment` },
   { date: '2023-07-19', title: 'Day 7', content: `Linux with Docker` },
-  { date: '2023-07-20', title: 'Day 8', content: `Dockerise Project:Recruitement Project` },
+  { date: '2023-07-20', title: 'Day 8', content: `Dockerise Project:Recruitement Management System` },
   { date: '2023-07-21', title: 'Day 9', content: `Solving Errors` },
   { date: '2023-07-24', title: 'Day 10', content: `Presentation Day` },
   { date: '2023-07-25', title: 'Day 11', content: `Introsduction to Google Webmaster` },

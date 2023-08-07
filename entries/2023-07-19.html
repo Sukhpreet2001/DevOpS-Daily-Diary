@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 7 - 19/07/2023 <span>Wednesday</span></title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('day7.jpeg'); /* Replace 'day1.jpeg' with 'day2.jpeg' */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .entry-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.82); /* 18% transparent */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    ul ul {
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .day-of-week {
+      font-size: 1.2em;
+      color: #2196F3;
+    }
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(77, 67, 32, 0.9); /* 10% transparent background for the navbar */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: rgb(195, 227, 228);
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .navbar a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <div class="entry-container">
+    <h2>Day 7 - 19/07/2023 <span class="day-of-week">Wednesday</span></h2>
+
+  <h2>Linux with Docker</h2>
+  <h3>Linux - Why Do We Use It?</h3>
+  <p>Linux is a widely used operating system known for its versatility and reliability. There are several advantages to using Linux:</p>
+  
+  <h3>1. Open Source and Customizability</h3>
+  <p>Linux is an open-source operating system, which means its source code is freely available. This allows users to customize and modify the OS according to their needs, providing greater flexibility and control over the system.</p>
+  
+  <h3>2. Stability and Reliability</h3>
+  <p>Linux is highly regarded for its stability and reliability, making it a preferred choice for servers and critical infrastructure. It has a robust memory management system and is less prone to crashes and system failures.</p>
+  
+  <h3>3. Security</h3>
+  <p>Linux is designed with security in mind. It features a strong user permission model and receives regular security updates and patches to promptly address vulnerabilities.</p>
+  
+  <h3>4. Performance</h3>
+  <p>Linux typically has lower resource requirements compared to other operating systems, allowing it to run efficiently on various hardware configurations.</p>
+  
+  <h3>5. Wide Range of Applications</h3>
+  <p>Linux finds application in a wide range of scenarios, from web servers and cloud infrastructure to embedded systems and IoT devices.</p>
+  
+  <p>In practice, Linux and Docker are often used together, taking advantage of both technologies. Docker runs natively on Linux, and many Docker images are built on top of Linux-based distributions. Developers use Linux as the underlying operating system on servers, and then Docker containers are used to package and deploy applications and services in a consistent and reproducible manner.</p>
+  
+  <p>By combining the stability, performance, and customizability of Linux with the portability, isolation, and scalability of Docker, developers can create a powerful and flexible infrastructure to deploy and manage applications effectively. Docker complements Linux, enabling efficient resource utilization and simplifying the deployment and management of complex applications in various environments.</p>
+  
+  <h2>Linux Distributions</h2>
+  <p>There are various distributions of Linux available, catering to different use cases and preferences. Some popular Linux distributions include:</p>
+  <ul>
+    <li>Ubuntu</li>
+    <li>Debian</li>
+    <li>CentOS</li>
+    <li>Alpine</li>
+    <li>Kali (Ethical Hacking)</li>
+  </ul>
+  
+  <h2>Commands for Linux (Ubuntu)</h2>
+  <p>Below are some commonly used commands in Linux (Ubuntu) terminal:</p>
+  <ol>
+    <li>Open hub.docker.com - Copy the command and paste it in the terminal (play-with-docker)</li>
+    <li>docker run -it ubuntu</li>
+    <li>echo "name" (with root @id)</li>
+    <li>history (display command history)</li>
+    <li>ls (list directories)</li>
+    <li>pwd (display present working directory)</li>
+    <li>cd lib (change to the 'lib' directory)</li>
+    <li>cd / (move to the root directory)</li>
+    <li>apt list (list all packages)</li>
+    <li>apt list update</li>
+    <li>apt install yarn</li>
+    <li>exit</li>
+  </ol>
+  
+  <p>In Linux, directories are represented using '/', while in Windows, they are represented using '\'. The command line usage and syntax may vary between the two operating systems.</p>
+  
+
+
+
+  <div class="navbar">
+    <a href="2023-07-18.html" class="previous-day-link">Previous Day</a>
+    <a href="../index.html">Homepage</a>
+    <a href="2023-07-20.html" class="next-day-link">Next Day</a>
+  </div>
+</body>
+
+</html>
