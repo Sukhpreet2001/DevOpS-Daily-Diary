@@ -11,10 +11,15 @@ const dailyDiaryEntries = [
   { date: '2023-07-20', title: 'Day 8', content: `Dockerise Project:Base Project` },
   { date: '2023-07-21', title: 'Day 9', content: `Finalising Project` },
   { date: '2023-07-24', title: 'Day 10', content: `Presentation Day` },
-  { date: '2023-07-25', title: 'Day 11', content: `Introsduction to Google Webmaster` },
+  { date: '2023-07-25', title: 'Day 11', content: `Introduction to Google Webmaster` },
   { date: '2023-07-26', title: 'Day 12', content: `Introduction to Jenkins` },
   { date: '2023-07-27', title: 'Day 13', content: `Jenkins Setup` },
   { date: '2023-07-28', title: 'Day 14', content: `CI/CD Pipeline using Jenkins` },
+  { date: '2023-07-31', title: 'Day 15', content: `More about Jenkins` },
+  { date: '2023-08-01', title: 'Day 16', content: `CircleCi: Alternative to Jenkins` },
+  { date: '2023-08-02', title: 'Day 17', content: `Presentation Techniques` },
+  { date: '2023-08-03', title: 'Day 18', content: `Verifying your GitHub Pages` },
+  { date: '2023-08-04', title: 'Day 19', content: `Training Report File` },
   // Add more daily diary entries here...
 ];
 
