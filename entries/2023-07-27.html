@@ -95,7 +95,26 @@
   <div class="entry-container">
     <h2>Day 13- 27/07/2023 <span class="day-of-week">Thursday</span></h2>
     <h2> Jenkins Setup</h2>
-    
+    <h3>Setting Up Jenkins Using Docker</h3>
+  <p>Follow these steps to set up Jenkins using Docker:</p>
+<h3>Step 1: Run Docker Container</h3>
+<p>Open PowerShell as an administrator and execute the following command to run the Jenkins container:</p>
+<code>docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts</code>
+<h3>Step 2: Check Container Status</h3>
+<p>Use the following command to check the status of the Docker container and obtain the container ID:</p>
+<code>docker ps</code>
+<h3>Step 3: View Container Logs</h3>
+<p>Retrieve the password token for Jenkins from the container logs using the container ID:</p>
+<code>docker logs container_id</code>
+<h3>Step 4: Access Jenkins Web Interface</h3>
+<p>Open a web browser and go to <a href="#" target="_blank">localhost:8080</a>.</p>
+<h3>Step 5: Log In to Jenkins</h3>
+<p>Enter the password token obtained from the logs and proceed to log in to Jenkins.</p>
+<p>Follow these steps to successfully set up Jenkins using Docker and begin automating your software development processes.</p>
+
+
+
+
 
 
     <div class="navbar">
