@@ -96,6 +96,70 @@
     <h2>Day 14- 28/07/2023 <span class="day-of-week">Friday</span></h2>
     <h2> CI/CD Pipelining using Jenkins</h2>
     
+<h3>Setting Up CI/CD Pipeline using Jenkins</h3>
+<p><strong>Continuous Integration and Continuous Deployment (CI/CD)</strong> with Jenkins is a popular practice in software development that involves automating the process of building, testing, and deploying applications. Jenkins is an open-source automation server that is widely used for implementing CI/CD pipelines.</p>
+<p>Jenkins supports a wide range of plugins that make it highly extensible and adaptable to different development environments and technologies. You can find plugins for various build tools, testing frameworks, deployment platforms, and more.</p>
+<p>Keep in mind that CI/CD pipelines can be quite complex, depending on the project's needs. They might involve multiple stages, integration with external services, and intricate testing scenarios.</p>
+<p>Other than Jenkins, there are also other CI/CD tools like GitLab CI/CD, Travis CI, CircleCI, and more, each with its unique features and integrations.</p>
+
+<h3>Step 1: Create a new Jenkins Pipeline project</h3>
+
+<ol>
+<li>In Jenkins, click on "New Item" to create a new project.</li>
+<li>Choose "Pipeline" and give your project a name.</li>
+<li>Under the "Pipeline" section, select "Pipeline script" and choose the "Pipeline script from SCM" option.</li>
+<li>Select your version control system (e.g., Git) and provide the repository URL.</li>
+</ol>
+
+<h3>Step 2: Define your Jenkinsfile</h3>
+
+<ol>
+<li>In your version control repository, create a file named <code>Jenkinsfile</code>. This file will define the pipeline steps.</li>
+<li>A basic Jenkinsfile consists of three stages: "Build," "Test," and "Deploy." The Jenkinsfile should be written in the Groovy-based DSL (Declarative Syntax).</li>
+</ol>
+
+<p>Here's a simple example of a Jenkinsfile:</p>
+
+<pre><code>pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                // Checkout the code from the version control repository
+                checkout scm
+
+                // Build your application (e.g., using Maven)
+                sh 'mvn clean package'
+            }
+        }
+        stage('Test') {
+            steps {
+                // Run automated tests
+                // Add your testing commands here
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Deploy the application (e.g., using Docker or Kubernetes)
+                // Add your deployment commands here
+            }
+        }
+    }
+}
+</code></pre>
+
+<h3>Step 3: Save and trigger the pipeline</h3>
+
+<ol>
+<li>Save the Jenkinsfile in your version control repository.</li>
+<li>Back in Jenkins, click on "Save" to save the pipeline configuration.</li>
+<li>Click on "Build Now" to manually trigger the pipeline for the first time.</li>
+</ol>
+
+<p>Now, whenever you push new code to the repository, Jenkins will automatically detect the changes and trigger the pipeline, executing the defined stages (Build, Test, and Deploy).</p>
+
+<p>For a more comprehensive CI/CD pipeline, you can add additional stages for tasks like static code analysis, security checks, and integration testing. Jenkins supports various plugins that can be integrated into the pipeline to extend its capabilities based on your project's requirements.</p>
 
 
     <div class="navbar">
